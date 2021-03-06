@@ -1,0 +1,48 @@
+@import 'variable.scss';
+
+.yt-list {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.list-box {
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+  padding-bottom: 100px;
+}
+
+.no-save,
+.loading {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: $pad-width) {
+  .yt-list {
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .list-box {
+  }
+
+  .pagenation-list {
+    width: 100vw;
+  }
+
+  .prev,
+  .next {
+    &:hover {
+    }
+  }
+
+  .loading {
+  }
+}

@@ -1,0 +1,18 @@
+$red: #c4302b;
+$pad-width: 1080px;
+$phone-width: 767px;
+
+@function rgba_red($opacity) {
+  @return rgba(196, 48, 43, $opacity);
+}
+
+@mixin shadow {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+@mixin hover-shadow {
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.05);
+  transform: translate(-2px, -2px);
+}

@@ -1,0 +1,97 @@
+@import 'variable.scss';
+
+.nav-box {
+  flex-direction: column;
+  width: 200px;
+  height: 100vh;
+  align-items: center;
+  padding-top: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  a {
+    padding: 12px 25px;
+    margin-top: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    background-color: white;
+    @include shadow;
+
+    i {
+      margin-right: 8px;
+    }
+
+    &:hover {
+      @include hover-shadow;
+    }
+
+    &.active {
+      color: $red;
+    }
+  }
+}
+
+@media (max-width: $pad-width) {
+  .nav-box {
+    top: 0;
+    right: 0;
+    left: unset;
+    padding-top: 0;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+
+    a {
+      pointer-events: auto;
+
+      i {
+      }
+
+      &:hover {
+      }
+
+      &.active {
+      }
+    }
+  }
+}
+
+@media (max-width: $phone-width) {
+  .nav-box {
+    background-color: white;
+    top: unset;
+    right: 0;
+    bottom: 0;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: auto;
+    flex-direction: row;
+    padding: 15px 0;
+    background-color: white;
+    z-index: 3;
+
+    a {
+      flex-direction: column;
+      margin-top: 0;
+      font-size: 12px;
+      padding: 5px 15px;
+
+      i {
+        margin-right: 0;
+        margin-bottom: 5px;
+        font-size: 15px;
+      }
+
+      &:hover {
+        @include hover-shadow;
+      }
+
+      &.active {
+      }
+    }
+  }
+}

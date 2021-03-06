@@ -1,0 +1,102 @@
+@import 'variable.scss';
+
+.yt-list {
+  width: 100%;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.list-box {
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.pagenation-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  width: 880px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.prev,
+.next {
+  padding: 8px 12px;
+  @include shadow;
+  cursor: pointer;
+
+  &:hover {
+    @include hover-shadow;
+  }
+}
+
+.loading {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: $pad-width) {
+  .yt-list {
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .list-box {
+  }
+
+  .pagenation-list {
+    width: 100vw;
+    z-index: 3;
+  }
+
+  .prev,
+  .next {
+    &:hover {
+    }
+  }
+
+  .loading {
+  }
+}
+
+@media (max-width: $phone-width) {
+  .yt-list {
+  }
+
+  .list-box {
+  }
+
+  .pagenation-list {
+    z-index: 2;
+    margin-top: 50px;
+    margin-bottom: 150px;
+  }
+
+  .prev,
+  .next {
+    &:hover {
+    }
+  }
+
+  .loading {
+  }
+
+  .select {
+    width: 50vw;
+    font-size: 14px;
+    outline: none;
+    border: none;
+    padding: 8px 8px;
+    background-color: white;
+    @include shadow;
+  }
+}

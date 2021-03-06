@@ -1,0 +1,16 @@
+@import 'variable.scss';
+
+.page-btn {
+  padding: 8px 12px;
+  cursor: pointer;
+  @include shadow;
+
+  &:hover {
+    @include hover-shadow;
+  }
+
+  &.active {
+    color: $red;
+    box-shadow: 2px 2px 5px rgba_red(0.3);
+  }
+}

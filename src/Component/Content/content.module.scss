@@ -1,0 +1,11 @@
+@import 'variable.scss';
+.box {
+  width: calc(100vw - 200px);
+  margin-left: auto;
+}
+
+@media (max-width: $pad-width) {
+  .box {
+    width: 100vw;
+  }
+}

@@ -1,0 +1,19 @@
+@import 'variable.scss';
+
+.save {
+  font-size: 15px;
+  color: white;
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  transition: color 0.3s ease;
+  padding: 12px;
+
+  &:hover {
+    color: $red;
+  }
+
+  &.active {
+    color: $red;
+  }
+}

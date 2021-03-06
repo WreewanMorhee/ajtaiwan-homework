@@ -1,0 +1,193 @@
+@import 'variable.scss';
+
+.video-box {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+  padding-top: 50px;
+
+  .video {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+    .ad-box {
+      display: block;
+      width: 80%;
+      height: 170px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      opacity: 0;
+      pointer-events: none;
+
+      &.active {
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      .close {
+        font-size: 13px;
+        color: color;
+        cursor: pointer;
+        position: absolute;
+        top: 3px;
+        right: 3px;
+      }
+    }
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .title {
+    font-size: 25px;
+    margin-top: 25px;
+  }
+
+  .description {
+    font-size: 18px;
+    margin-top: 12px;
+    color: gray;
+    white-space: pre-line;
+    padding-bottom: 50px;
+  }
+}
+
+.loading-box {
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow-video {
+  width: 40px;
+  height: 40px;
+  font-size: 15px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  @include shadow;
+
+  &:hover {
+    @include hover-shadow;
+  }
+}
+
+.prev-video {
+  left: -100px;
+}
+
+.next-video {
+  right: -100px;
+}
+
+@media (max-width: $pad-width) {
+  .video-box {
+    width: 85vw;
+
+    .video {
+      .ad-box {
+        &.active {
+        }
+
+        .close {
+        }
+      }
+    }
+
+    video {
+    }
+
+    .title {
+    }
+
+    .description {
+    }
+
+    .loading-box {
+    }
+  }
+
+  .arrow-video {
+    &:hover {
+    }
+  }
+
+  .prev-video {
+    left: -50px;
+    z-index: 3;
+  }
+
+  .next-video {
+    right: -50px;
+    z-index: 3;
+  }
+}
+
+@media (max-width: $phone-width) {
+  .video-box {
+    width: 100vw;
+
+    .video {
+      .ad-box {
+        &.active {
+        }
+
+        .close {
+        }
+      }
+    }
+
+    video {
+    }
+
+    .title {
+      margin-top: 100px;
+      width: 90vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .description {
+      width: 90vw;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 120px;
+    }
+
+    .loading-box {
+    }
+  }
+
+  .arrow-video {
+    &:hover {
+    }
+  }
+
+  .prev-video {
+    left: 20px;
+    z-index: 3;
+    bottom: -70px;
+    top: unset;
+  }
+
+  .next-video {
+    right: 20px;
+    z-index: 3;
+    bottom: -70px;
+    top: unset;
+  }
+}

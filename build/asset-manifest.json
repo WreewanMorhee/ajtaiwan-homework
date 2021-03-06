@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ajtaiwan/static/css/main.47901831.chunk.css",
+    "main.js": "/ajtaiwan/static/js/main.fe5a4a8f.chunk.js",
+    "main.js.map": "/ajtaiwan/static/js/main.fe5a4a8f.chunk.js.map",
+    "runtime-main.js": "/ajtaiwan/static/js/runtime-main.57c32c23.js",
+    "runtime-main.js.map": "/ajtaiwan/static/js/runtime-main.57c32c23.js.map",
+    "static/js/2.db91c891.chunk.js": "/ajtaiwan/static/js/2.db91c891.chunk.js",
+    "static/js/2.db91c891.chunk.js.map": "/ajtaiwan/static/js/2.db91c891.chunk.js.map",
+    "static/js/3.831031ed.chunk.js": "/ajtaiwan/static/js/3.831031ed.chunk.js",
+    "static/js/3.831031ed.chunk.js.map": "/ajtaiwan/static/js/3.831031ed.chunk.js.map",
+    "index.html": "/ajtaiwan/index.html",
+    "static/css/main.47901831.chunk.css.map": "/ajtaiwan/static/css/main.47901831.chunk.css.map",
+    "static/js/2.db91c891.chunk.js.LICENSE.txt": "/ajtaiwan/static/js/2.db91c891.chunk.js.LICENSE.txt",
+    "static/media/ad.93e44888.jpg": "/ajtaiwan/static/media/ad.93e44888.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.57c32c23.js",
+    "static/js/2.db91c891.chunk.js",
+    "static/css/main.47901831.chunk.css",
+    "static/js/main.fe5a4a8f.chunk.js"
+  ]
+}
